@@ -10,8 +10,8 @@
     "astro": "astro",
     "lint:check": "eslint --ext .js,.jsx,.ts,.tsx,.astro --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.astro --ignore-path .gitignore .",
-    "format:check": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "format:check": "prettier --check --ignore-path .gitignore --plugin-search-dir=. .",
+    "format:fix": "prettier --write --ignore-path .gitignore --plugin-search-dir=. ."
   },
   "dependencies": {
     "astro": "^2.0.15"
