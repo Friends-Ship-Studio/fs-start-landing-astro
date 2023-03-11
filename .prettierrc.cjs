@@ -2,7 +2,11 @@
 module.exports = {
   semi: false,
   singleQuote: true,
-  plugins: [require.resolve('prettier-plugin-astro')],
+  plugins: [
+    require.resolve('prettier-plugin-astro'),
+    require.resolve('prettier-plugin-tailwindcss'),
+  ],
+  pluginSearchDirs: false,
   overrides: [
     {
       files: '*.astro',
